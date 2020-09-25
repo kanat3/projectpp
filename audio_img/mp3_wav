@@ -1,0 +1,4 @@
+import pydub
+sound = pydub.AudioSegment.from_mp3("C:/Users/localadmin/Pictures/common_voice_ru_18849003.mp3")
+sound.export("C:/Users/localadmin/Pictures/testsound.wav", format="wav")
+#не работает
