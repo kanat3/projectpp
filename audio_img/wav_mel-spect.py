@@ -1,26 +1,19 @@
-#https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53
 import librosa
 import librosa.display
-import matplotlib.pyplot as plt
 import numpy as np
-y, sr = librosa.load('Documents/common_voice_ru_18849003.wav')
-plt.plot(y);
-plt.title('Signal');
-plt.xlabel('Time (samples)');
-plt.ylabel('Amplitude');
+import matplotlib.pyplot as plt
+filename = 'C:/Users/localadmin/Pictures/common_voice_ru_18849004.wav' #file name
+y, sr = librosa.load(filename)
+# trim silent edges
+whale_song, _ = librosa.effects.trim(y)
+librosa.display.waveplot(whale_song, sr=sr);
 n_fft = 2048
-ft = np.abs(librosa.stft(y[:n_fft], hop_length = n_fft+1))
-plt.plot(ft);
-plt.title('Spectrum');
-plt.xlabel('Frequency Bin');
-plt.ylabel('Amplitude');
-spec = np.abs(librosa.stft(y, hop_length=512))
-spec = librosa.amplitude_to_db(spec, ref=np.max)
-librosa.display.specshow(spec, sr=sr, x_axis='time', y_axis='log');
-plt.colorbar(format='%+2.0f dB');
-plt.title('Spectrogram');
-mel_spect = librosa.feature.melspectrogram(y=y, sr=sr, n_fft=2048, hop_length=1024)
-mel_spect = librosa.power_to_db(spect, ref=np.max)
-librosa.display.specshow(mel_spect, y_axis='mel', fmax=8000, x_axis='time');
-plt.title('Mel Spectrogram');
+D = np.abs(librosa.stft(whale_song[:n_fft], n_fft=n_fft, hop_length=n_fft+1))
+plt.plot(D);
+hop_length = 512
+D = np.abs(librosa.stft(whale_song, n_fft=n_fft, hop_length=hop_length))
+librosa.display.specshow(D, sr=sr, x_axis='time', y_axis='linear');
+plt.colorbar();
+DB = librosa.amplitude_to_db(D, ref=np.max)
+librosa.display.specshow(DB, sr=sr, hop_length=hop_length, x_axis='time', y_axis='log');
 plt.colorbar(format='%+2.0f dB');
