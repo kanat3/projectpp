@@ -2,7 +2,8 @@ import librosa
 import librosa.display
 import numpy as np
 import matplotlib.pyplot as plt
-filename = 'C:/Users/localadmin/Pictures/common_voice_ru_18849004.wav' #file name
+#показывает mel-спектограмму для одного файла
+filename = 'C:/Users/localadmin/Pictures/common_voice_ru_18849004.wav'
 y, sr = librosa.load(filename)
 # trim silent edges
 whale_song, _ = librosa.effects.trim(y)
