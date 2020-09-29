@@ -19,3 +19,5 @@
 1. Стырила код отсюда https://pythonbasics.org/convert-mp3-to-wav/
 2. Теперь код может конвертировать любое кол-во файлов mp3 в wav
 3. Датасет наконец-то в формате wav
+#### 29.09.2020
+1. https://github.com.cnpmjs.org/OmarHory/VoiceGenderRecognition - отсюда беру модель
