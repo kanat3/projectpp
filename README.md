@@ -38,3 +38,4 @@
 2. https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/ - пример загрузки датасета 
 3. Желаю здоровья мудрому человеку с данного сайта https://stackoverflow.com/questions/11837979/removing-white-space-around-a-saved-image-in-matplotlib
 т.к он решил проблему с белым окном вокруг спектограммы.
+4. О, загрузила картиночки с jupiter на git
