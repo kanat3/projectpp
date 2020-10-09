@@ -36,3 +36,4 @@ for k in range (0,76564):
     save_path = "{}{}{}".format('D:/image/', files[k], '.png')
     plt.savefig(save_path)
     plt.clf()
+    plt.close()
