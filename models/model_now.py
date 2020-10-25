@@ -1,3 +1,16 @@
+import numpy as np
+from matplotlib import pyplot as plt
+import pandas as pd
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
+from tensorflow.keras import regularizers, optimizers
+from tensorflow.keras.layers import Dense, Activation, Flatten
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.models import load_model
+from keras.layers.normalization import BatchNormalization
+
 def model_gender():
     model = Sequential()
     
