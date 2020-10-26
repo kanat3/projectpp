@@ -86,4 +86,5 @@
 
 
 ![alt text](train.png)
+
 4. Загрузила все файлы на Google Диск
