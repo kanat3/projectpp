@@ -15,24 +15,24 @@ def model_gender():
     model = Sequential()
     
     model.add(Conv2D(filters=3, kernel_size=(4, 4), input_shape=(288, 432, 3), activation='relu')) 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
-
     model.add(Conv2D(filters=32, kernel_size=(4, 4), activation='relu')) 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(MaxPooling2D(pool_size=(3, 3)))
 
-    model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu')) 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(filters=64, kernel_size=(4, 4), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(3, 3)))
 
-    model.add(Conv2D(filters=128, kernel_size=(3, 3), activation='relu')) 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(filters=128, kernel_size=(4, 4), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(3, 3)))
 
-    model.add(Conv2D(filters=256, kernel_size=(2, 2), activation='relu')) 
-    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Conv2D(filters=128, kernel_size=(4, 4), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(3, 3)))
 
     model.add(Flatten()) #Fully Connected Layer
-    model.add(Dense(77, activation='relu'))
-    
+    model.add(Dense(768, activation='relu'))
+    model.add(Dense(384, activation='relu'))
+    model.add(Dense(96, activation='relu'))
+    model.add(Dense(24, activation='relu'))
     model.add(Dense(2, activation='softmax'))
 
-    model.compile(loss='binary_crossentropy', optimizer= 'adam', metrics=['accuracy'])
+    model.compile(loss='binary_crossentropy', optimizer = tf.keras.optimizers.SGD(learning_rate=0.01), metrics=['accuracy'])
     return model
