@@ -84,4 +84,4 @@
 2. Дописала полноценный код копирования спектограмм по папкам.
 3. Вот так выглядият мои папки на примере train 
 <img src="file:///C:/Users/localadmin/Pictures/train.png" />
-![](C:\Users\localadmin\Pictures\train.png)
+! [] (C:\Users\localadmin\Pictures\train.png)
