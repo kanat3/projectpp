@@ -84,15 +84,3 @@
 2. Дописала полноценный код копирования спектограмм по папкам.
 3. Вот так выглядият мои папки на примере train 
 
-Структура папок тома SSD_C
-Серийный номер тома: F0E9-121F
-C:\PROGRAM FILES\FAR MANAGER
-+---Addons
-|   +---Colors
-|   |   +---Custom Highlighting
-|   |   \---Default Highlighting
-|   +---Macros
-|   +---SetUp
-|   +---Shell
-|   \---XLat
-|       \---Russian
