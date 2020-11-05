@@ -120,4 +120,4 @@
 2. Загрузила код на гит
 3. Подобрала оптимизатор под нейросеть, который хоть как-то её обучает. https://github.com/keras-team/keras/issues/1597#issuecomment-485651390
 4. Чуть изменила модель CNN, сделав её более простой.
-![alt text](graf.jpg)
+![alt text](chart.jpg)
