@@ -123,3 +123,5 @@
 5. Распределение файлов в датасете пока такое 
 
 ![alt text](chart.jpg)
+![alt text](male_age.png)
+![alt text](female_age.png)
