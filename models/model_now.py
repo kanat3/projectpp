@@ -36,3 +36,28 @@ def model_gender():
 
     model.compile(loss='binary_crossentropy', optimizer = tf.keras.optimizers.SGD(learning_rate=0.01), metrics=['accuracy'])
     return model
+
+## model 2
+
+def model_gender():
+    model = Sequential()
+    
+    model.add(Conv2D(filters=3, kernel_size=(8, 8), input_shape=(288, 432, 3), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(4, 4)))
+
+    model.add(Conv2D(filters=32, kernel_size=(8, 8), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(4, 4)))
+
+    model.add(Conv2D(filters=64, kernel_size=(8, 8), activation='relu')) 
+    model.add(MaxPooling2D(pool_size=(4, 4)))
+
+    model.add(Flatten()) #Fully Connected Layer
+    model.add(Dense(512, activation='relu'))
+    model.add(Dense(128, activation='relu'))
+    model.add(Dense(2, activation='relu'))
+
+    model.compile(loss='binary_crossentropy', optimizer = tf.keras.optimizers.Adadelta(
+    learning_rate=0.001, rho=0.95, epsilon=1e-07), metrics=['accuracy'])
+    return model
+
+model = model_gender() # Имя модели
