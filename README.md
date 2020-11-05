@@ -123,5 +123,3 @@
 5. Распределение файлов в датасете пока такое 
 
 ![alt text](chart.jpg)
-![alt text](chart1.jpg)
-![alt text](chart2.jpg)
