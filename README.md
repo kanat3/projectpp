@@ -125,3 +125,8 @@
 ![alt text](chart.jpg)
 ![alt text](male_age.png)
 ![alt text](female_age.png)
+
+
+#### 06.11.2020
+1. Отредактировала кол-во аудио в датасете
+2. Перевела весь датасет в wav
