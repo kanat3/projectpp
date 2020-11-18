@@ -152,4 +152,4 @@ http://www.100byte.ru/python/factors/factors.html
 3. Когда я использовала загрузку чекпоинта и тест на данных одновременно, появилась вот эта ссылочка 
 https://www.tensorflow.org/guide/checkpoint#manually_inspecting_checkpoints
 5. Теперь все-таки сохраняю все данные в h5
-6. Могу предсказывать класс поданной на вход спектрограммы аудио
+6. Могу предсказывать класс поданной на вход спектрограммы аудио https://stackoverflow.com/questions/52270177/how-to-use-predict-generator-on-new-images-keras
